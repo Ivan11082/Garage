@@ -17,6 +17,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.time.ZonedDateTime;
+
 /**
  * @author Alex
  * @since 10/03/2025
@@ -31,5 +33,11 @@ public class VehicleTest {
         Vehicle bike = new Bike(expected);
         car.signal();
         bike.signal();
+    }
+    @Test
+    void testDate() {
+        Vehicle car = new Car("Lada");
+        car.setDate(ZonedDateTime.now());
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.."+car.getDate());
     }
 }
