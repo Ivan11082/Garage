@@ -28,16 +28,19 @@ public class VehicleTest {
     void testVehicle() {
         String expected = "Lada";
         Vehicle car = new Car(expected);
-        String actual =  car.name();
+        String actual = car.name();
         assertEquals(expected, actual);
         Vehicle bike = new Bike(expected);
         car.signal();
         bike.signal();
     }
+
     @Test
     void testDate() {
         Vehicle car = new Car("Lada");
-        car.setDate(ZonedDateTime.now());
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.."+car.getDate());
+        car.setRentDate(ZonedDateTime.now());
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.." + car.getRentDate());
+        car.setReleaseDate(ZonedDateTime.now());
+        System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.." + car.getReleaseDate());
     }
 }

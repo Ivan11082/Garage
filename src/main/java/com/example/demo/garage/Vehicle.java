@@ -4,25 +4,36 @@ import java.time.ZonedDateTime;
 
 abstract public class Vehicle {
     private final String name;
-    private ZonedDateTime date;
+    private ZonedDateTime rentDate;
+    private ZonedDateTime releaseDate;
 
-    //constructor
+    // constructor
     public Vehicle(String n) {
         name = n;
     }
 
-    //method get name
+    // method get name
     public String name() {
         return name;
     }
+
     abstract public void signal();
 
-
-    public void setDate(ZonedDateTime date){
-        this.date = date;
+    public void setRentDate(ZonedDateTime rentDate) {
+        this.rentDate = rentDate;
     }
 
-    public ZonedDateTime getDate(){
-        return this.date;
+    public ZonedDateTime getRentDate() {
+        return this.rentDate;
     }
+
+    public void  setReleaseDate (ZonedDateTime releaseDate){
+    this.releaseDate = releaseDate;
+
+    }
+
+    public ZonedDateTime getReleaseDate() {
+        return this.releaseDate;
+    }
+
 }
