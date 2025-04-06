@@ -11,7 +11,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Mobile TeleSystems PJSC.
  */
-package com.example.demo.garage;
+package com.example.demo.garage.model;
 
 import org.junit.jupiter.api.Test;
 

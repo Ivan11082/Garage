@@ -1,4 +1,4 @@
-package com.example.demo.garage;
+package com.example.demo.garage.model;
 
 import java.util.*;
 import org.springframework.stereotype.Component;
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 public class Garage {
     private List<Vehicle> cars = new ArrayList<>();
 
-    void add(Vehicle v) {
+    public void add(Vehicle v) {
         cars.add(v);
     }
 
-    List<Vehicle> getVehicles() {
+    public List<Vehicle> getVehicles() {
         return cars;
     }
 }

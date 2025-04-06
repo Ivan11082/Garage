@@ -11,11 +11,14 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Mobile TeleSystems PJSC.
  */
-package com.example.demo.garage;
+package com.example.demo.garage.features.admin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import java.util.List;
+import com.example.demo.garage.model.Car;
+import com.example.demo.garage.model.Garage;
+import com.example.demo.garage.model.Vehicle;
 
 /**
  * @author Alex

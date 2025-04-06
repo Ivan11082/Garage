@@ -1,4 +1,4 @@
-package com.example.demo.garage;
+package com.example.demo.garage.model;
 
 import java.util.List;
 

@@ -11,18 +11,17 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Mobile TeleSystems PJSC.
  */
-package com.example.demo.garage;
+package com.example.demo.garage.model;
 
 /**
  * @author Alex
  * @since 16/03/2025
  */
-public class Car extends Vehicle {
-
-    public Car(String n) {
+public class Bike extends Vehicle {
+    public Bike(String n) {
         super(n);
     }
-    public void signal() {
-        System.out.println("BI, BI");
+    public void signal(){
+        System.out.println("Csin, Csin");
     }
 }
